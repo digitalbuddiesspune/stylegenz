@@ -1,0 +1,296 @@
+@import "tailwindcss";
+
+/* Global Design System - Brown for Autumn Style */
+:root {
+  /* Color Palette - Matching Brown for Autumn Design */
+  --bg-primary: #F5E6D3; /* Light beige background (top section) */
+  --bg-secondary: #E8D4B0; /* Lighter beige for cards */
+  --bg-tertiary: #8B6F47; /* Darker brown background (bottom section) */
+  --text-primary: #3D2817; /* Dark brown for main text */
+  --text-secondary: #6B4E3D; /* Medium brown for secondary text */
+  --text-heading: #3D2817; /* Dark brown for headings */
+  --accent-red: #3D2817; /* Dark brown for buttons and accents */
+  --accent-red-hover: #4A3420; /* Slightly lighter brown for hover */
+  --accent-yellow: #8B6F47; /* Medium brown accent */
+  --accent-yellow-hover: #7D5F3A; /* Darker brown for hover */
+  --border-color: #A0826D; /* Medium brown for borders */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  
+  /* Typography */
+  --font-primary: 'Georgia', 'Times New Roman', serif; /* Serif font for Brown for Autumn style */
+  --font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Classes */
+.text-optic-heading {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-black);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.text-optic-subheading {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.4;
+}
+
+.text-optic-body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.6;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 1rem 2rem;
+  font-weight: var(--font-weight-medium);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: var(--font-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-red-hover);
+  color: var(--bg-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 2px solid var(--text-primary);
+  border-radius: var(--radius-lg);
+  padding: 1rem 2rem;
+  font-weight: var(--font-weight-medium);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: var(--font-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-accent {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.2rem;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-red-hover);
+  transform: scale(1.1);
+}
+
+/* Card Styles */
+.card-optic {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.card-optic:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-product {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-md);
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.card-product:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Layout */
+.container-optic {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .container-optic {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+/* Remove default margins and paddings */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* 3D Effects for Hero Section */
+.hero-3d-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.hero-3d-image {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+/* Smooth 3D transitions */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-3d-image {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Remove blinking cursor effects from Featured Products section */
+.featured-products-section * {
+  caret-color: transparent !important;
+}
+
+/* Remove blinking cursor from product cards and related elements */
+.featured-products-section .bg-white.rounded-lg *,
+.featured-products-section [class*="ProductCard"] *,
+.featured-products-section .grid[class*="grid-cols"] * {
+  caret-color: transparent !important;
+}
+
+/* Remove any pseudo-elements that might create blinking effects */
+.featured-products-section *::before,
+.featured-products-section *::after {
+  animation: none !important;
+}
+
+/* Remove caret from buttons and links in Featured Products section */
+.featured-products-section button,
+.featured-products-section a,
+.featured-products-section [role="button"] {
+  caret-color: transparent !important;
+}
+
+/* Remove focus outline that might look like a cursor */
+.featured-products-section *:focus {
+  outline: none !important;
+  caret-color: transparent !important;
+}
+
+/* Ensure interactive elements keep pointer cursor, but remove text cursor */
+.featured-products-section button,
+.featured-products-section a,
+.featured-products-section [role="button"],
+.featured-products-section img,
+.featured-products-section [class*="cursor-pointer"] {
+  cursor: pointer !important;
+}
+
+/* Remove blinking background effects from Featured Products section */
+.featured-products-section {
+  /* Prevent any background animations or transitions */
+  animation: none !important;
+  background-color: var(--bg-primary) !important;
+  transition: background-color 0s !important;
+  will-change: auto !important;
+}
+
+/* Disable all animations on the section itself */
+.featured-products-section {
+  animation: none !important;
+  animation-name: none !important;
+  animation-duration: 0s !important;
+  animation-iteration-count: 1 !important;
+  animation-delay: 0s !important;
+  animation-timing-function: none !important;
+  animation-fill-mode: none !important;
+}
+
+/* Remove any pseudo-elements that might cause blinking */
+.featured-products-section::before,
+.featured-products-section::after {
+  display: none !important;
+  content: none !important;
+  animation: none !important;
+  background: none !important;
+}
+
+/* Ensure background color stays constant */
+.featured-products-section[style*="background-color"] {
+  background-color: var(--bg-primary) !important;
+  transition: background-color 0s !important;
+}
