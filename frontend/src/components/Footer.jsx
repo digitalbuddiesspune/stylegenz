@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter, Youtube, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram, X, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex items-center mb-3 sm:mb-4">
             <Link to="/" className="flex items-center">
               <img 
-                src="https://res.cloudinary.com/dvkxgrcbv/image/upload/v1771574636/Untitled_1600_x_1000_px_1_ifkpl5.png" 
+                src="https://res.cloudinary.com/dvkxgrcbv/image/upload/v1771580651/acbfef03-8cd9-4c6f-a75c-695345cf35f1.png" 
                 alt="Stylegenz" 
                 className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain"
                 style={{ maxWidth: '280px' }}
@@ -30,11 +30,8 @@ const Footer = () => {
             <a href="https://instagram.com" target="_blank" rel="noreferrer" className="transition-colors" style={{ color: 'var(--bg-primary)' }} onMouseEnter={(e) => e.target.style.color = 'var(--bg-secondary)'} onMouseLeave={(e) => e.target.style.color = 'var(--bg-primary)'}>
               <Instagram className="w-5 h-5 sm:w-5 sm:h-5" size={20}/>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="transition-colors" style={{ color: 'var(--bg-primary)' }} onMouseEnter={(e) => e.target.style.color = 'var(--bg-secondary)'} onMouseLeave={(e) => e.target.style.color = 'var(--bg-primary)'}>
-              <Twitter className="w-5 h-5 sm:w-5 sm:h-5" size={20}/>
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="transition-colors" style={{ color: 'var(--bg-primary)' }} onMouseEnter={(e) => e.target.style.color = 'var(--bg-secondary)'} onMouseLeave={(e) => e.target.style.color = 'var(--bg-primary)'}>
-              <Youtube className="w-5 h-5 sm:w-5 sm:h-5" size={20}/>
+            <a href="https://x.com" target="_blank" rel="noreferrer" className="transition-colors" style={{ color: 'var(--bg-primary)' }} onMouseEnter={(e) => e.target.style.color = 'var(--bg-secondary)'} onMouseLeave={(e) => e.target.style.color = 'var(--bg-primary)'} aria-label="X (Twitter)">
+              <X className="w-5 h-5 sm:w-5 sm:h-5" size={20}/>
             </a>
           </div>
         </div>
