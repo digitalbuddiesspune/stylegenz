@@ -1,11 +1,11 @@
 /**
- * Ensures the default admin user exists (solemate123@gmail.com / Solemate123).
+ * Ensures the default admin user exists (stylegenz123@gmail.com / Stylegenz123).
  * Call this after MongoDB is connected. Safe to run on every startup.
  */
 import User from "../models/User.js";
 
-const ADMIN_EMAIL = "solemate123@gmail.com";
-const ADMIN_PASSWORD = "Solemate123";
+const ADMIN_EMAIL = "stylegenz123@gmail.com";
+const ADMIN_PASSWORD = "Stylegenz123";
 const ADMIN_NAME = "Admin";
 
 export async function ensureAdminUser() {

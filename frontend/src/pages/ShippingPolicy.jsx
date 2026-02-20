@@ -29,7 +29,7 @@ const ShippingPolicy = () => {
       title: "Contact Us",
       content: "For any queries or concerns regarding shipping and delivery, you can reach us at:",
       list: [
-        "M/S DYMA INFOTECH PRIVATE LIMITED (Solemate by Dyma Infotech Pvt. Ltd.)",
+        "M/S DYMA INFOTECH PRIVATE LIMITED (Stylegenz by Dyma Infotech Pvt. Ltd.)",
         "Address: Flat No. D-806, Tower D, Shri Ram Heights, Raj Nagar Extension, Ghaziabad, Ghaziabad, Uttar Pradesh, India, 201017",
         "Email: dyma.infotech.dipl@gmail.com"
       ]

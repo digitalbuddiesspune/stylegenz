@@ -32,7 +32,7 @@ const ReturnPolicy = () => {
     {
       icon: Shield,
       title: "Platform Information",
-      content: "This document is published in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, privacy policy and Terms of Use for access or usage of domain name www.solemate.in ('Website'), including the related mobile site and mobile application (hereinafter referred to as 'Platform')."
+      content: "This document is published in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, privacy policy and Terms of Use for access or usage of domain name www.stylegenz.in ('Website'), including the related mobile site and mobile application (hereinafter referred to as 'Platform')."
     },
     {
       icon: AlertCircle,
@@ -45,7 +45,7 @@ const ReturnPolicy = () => {
       title: "Contact Us",
       content: "For any queries or concerns regarding these terms and conditions, you can reach us at:",
       list: [
-        "M/S DYMA INFOTECH PRIVATE LIMITED (Solemate by Dyma Infotech Pvt. Ltd.)",
+        "M/S DYMA INFOTECH PRIVATE LIMITED (Stylegenz by Dyma Infotech Pvt. Ltd.)",
         "Address: Flat No. D-806, Tower D, Shri Ram Heights, Raj Nagar Extension, Ghaziabad, Ghaziabad, Uttar Pradesh, India, 201017",
         "Email: dyma.infotech.dipl@gmail.com"
       ]

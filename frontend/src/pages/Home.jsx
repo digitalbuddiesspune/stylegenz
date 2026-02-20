@@ -310,9 +310,20 @@ const Home = ({ addToCart, addToWishlist }) => {
         </div>
       </section>
 
-      {/* Three-Panel Category Section - Men's, Women's, Kids Shoes */}
+      {/* Three-Panel Category Section - Men's, Women's, Kids Shoes - Full Width */}
+      <div
+        className="w-full"
+        style={{
+          width: '100vw',
+          position: 'relative',
+          left: '50%',
+          right: '50%',
+          marginLeft: '-50vw',
+          marginRight: '-50vw',
+        }}
+      >
       <section className="relative pt-12 sm:pt-16 md:pt-20 pb-8 sm:pb-10" style={{ backgroundColor: 'var(--bg-primary)' }}>
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6">
           {/* Section Heading */}
           <div className="flex flex-col items-center justify-center text-center mb-8 sm:mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: 'var(--text-primary)', color: 'var(--bg-primary)' }}>
@@ -438,6 +449,7 @@ const Home = ({ addToCart, addToWishlist }) => {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Featured Products */}
       <section className="featured-products-section relative pt-12 sm:pt-16 md:pt-20" style={{ backgroundColor: 'var(--bg-primary)' }}>
@@ -599,9 +611,50 @@ const Home = ({ addToCart, addToWishlist }) => {
         </div>
       </section>
 
-      {/* Enhanced Features Section */}
-      <section className="relative" style={{ backgroundColor: 'var(--bg-primary)' }}>
-        <div className="container-optic py-20">
+      {/* Enhanced Stats Section - Full Width (above Why Choose Us) */}
+      <div
+        className="w-full"
+        style={{
+          width: '100vw',
+          position: 'relative',
+          left: '50%',
+          right: '50%',
+          marginLeft: '-50vw',
+          marginRight: '-50vw',
+        }}
+      >
+      <section className="py-16 sm:py-20 relative overflow-hidden" style={{ backgroundColor: 'var(--bg-tertiary)' }}>
+        {/* Animated background */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-1/4 w-32 h-32 rounded-full blur-xl animate-pulse" style={{ backgroundColor: 'var(--bg-primary)', opacity: '0.1' }}></div>
+          <div className="absolute bottom-0 right-1/4 w-40 h-40 rounded-full blur-2xl animate-pulse" style={{ backgroundColor: 'var(--bg-primary)', opacity: '0.05' }}></div>
+        </div>
+        <div className="w-full px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center max-w-7xl mx-auto">
+            <div className="group">
+              <div className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300" style={{ color: 'var(--bg-primary)' }}>100k+</div>
+              <div className="text-sm sm:text-base" style={{ color: 'var(--bg-primary)' }}>Happy Customers</div>
+            </div>
+            <div className="group">
+              <div className="text-4xl lg:text-6xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300" style={{ color: 'var(--bg-primary)' }}>500+</div>
+              <div className="text-sm sm:text-base" style={{ color: 'var(--bg-primary)' }}>Products</div>
+            </div>
+            <div className="group">
+              <div className="text-4xl lg:text-6xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300" style={{ color: 'var(--bg-primary)' }}>4.9★</div>
+              <div className="text-sm sm:text-base" style={{ color: 'var(--bg-primary)' }}>Average Rating</div>
+            </div>
+            <div className="group">
+              <div className="text-4xl lg:text-6xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300" style={{ color: 'var(--bg-primary)' }}>30</div>
+              <div className="text-sm sm:text-base" style={{ color: 'var(--bg-primary)' }}>Day Returns</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      {/* Enhanced Features Section - Why Choose Us */}
+      <section className="relative pt-12 sm:pt-16 md:pt-20" style={{ backgroundColor: 'var(--bg-primary)' }}>
+        <div className="container-optic pt-4 pb-20">
           <div className="text-center mb-20">
             <h2 className="text-optic-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 font-serif" style={{ color: 'var(--text-primary)', fontFamily: 'Georgia, serif' }}>
               Why Choose <span style={{ color: 'var(--text-primary)' }}>Sole mate</span>?
@@ -643,35 +696,6 @@ const Home = ({ addToCart, addToWishlist }) => {
                 <Heart className="w-4 h-4" />
                 <span className="text-sm">24/7 Help</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Enhanced Stats Section */}
-      <section className="py-16 sm:py-20 relative overflow-hidden" style={{ backgroundColor: 'var(--bg-tertiary)' }}>
-        {/* Animated background */}
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-32 h-32 rounded-full blur-xl animate-pulse" style={{ backgroundColor: 'var(--bg-primary)', opacity: '0.1' }}></div>
-          <div className="absolute bottom-0 right-1/4 w-40 h-40 rounded-full blur-2xl animate-pulse" style={{ backgroundColor: 'var(--bg-primary)', opacity: '0.05' }}></div>
-        </div>
-        <div className="container-optic relative">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div className="group">
-              <div className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300" style={{ color: 'var(--bg-primary)' }}>100k+</div>
-              <div className="text-sm sm:text-base" style={{ color: 'var(--bg-primary)' }}>Happy Customers</div>
-            </div>
-            <div className="group">
-              <div className="text-4xl lg:text-6xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300" style={{ color: 'var(--bg-primary)' }}>500+</div>
-              <div className="text-sm sm:text-base" style={{ color: 'var(--bg-primary)' }}>Products</div>
-            </div>
-            <div className="group">
-              <div className="text-4xl lg:text-6xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300" style={{ color: 'var(--bg-primary)' }}>4.9★</div>
-              <div className="text-sm sm:text-base" style={{ color: 'var(--bg-primary)' }}>Average Rating</div>
-            </div>
-            <div className="group">
-              <div className="text-4xl lg:text-6xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300" style={{ color: 'var(--bg-primary)' }}>30</div>
-              <div className="text-sm sm:text-base" style={{ color: 'var(--bg-primary)' }}>Day Returns</div>
             </div>
           </div>
         </div>

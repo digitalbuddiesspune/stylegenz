@@ -3,8 +3,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useUser } from "../context/UserContext.jsx";
 import { Mail, Lock, Eye, EyeOff, ArrowRight, Shield } from "lucide-react";
 
-const ADMIN_EMAIL = "solemate123@gmail.com";
-const ADMIN_PASSWORD = "Solemate123";
+const ADMIN_EMAIL = "stylegenz123@gmail.com";
+const ADMIN_PASSWORD = "Stylegenz123";
 
 const AdminLogin = () => {
   const { user, login, logout, loading: userLoading } = useUser();

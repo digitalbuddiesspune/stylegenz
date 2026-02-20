@@ -59,13 +59,13 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
   return (
     <div className="sticky top-0 z-50 w-full" style={{ backgroundColor: 'var(--bg-primary)' }}>
       <div className="w-full pr-3 sm:pr-4">
-        <div className="flex items-center justify-between py-1 sm:py-1.5 relative">
+        <div className="flex items-center justify-between py-0.5 sm:py-1 relative">
           {/* Left Side - Mobile Menu Button */}
           <div className="flex items-center md:flex-1">
             {/* Menu Button (Mobile) */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden flex items-center justify-center w-10 h-10 rounded-xl border transition-all duration-300 hover:scale-110"
+              className="md:hidden flex items-center justify-center w-8 h-8 rounded-lg border transition-all duration-300 hover:scale-110"
               style={{ 
                 backgroundColor: 'var(--bg-secondary)',
                 borderColor: 'var(--border-color)',
@@ -73,16 +73,16 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
               }}
               aria-label="Toggle menu"
             >
-              {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
 
             {/* Logo - Desktop Left Side */}
-            <Link to="/" className="hidden md:flex items-center ml-4">
+            <Link to="/" className="hidden md:flex items-center ml-2 md:ml-3">
               <img 
-                src="https://res.cloudinary.com/dvkxgrcbv/image/upload/v1767693849/White_Teal_Yellow_And_Blue_Illustrative_Digital_Payment_Solutions_Presentation_100_x_100_px_2_fspuqo.png" 
-                alt="Sole mate" 
-                className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain"
-                style={{ maxWidth: '200px' }}
+                src="https://res.cloudinary.com/dvkxgrcbv/image/upload/v1771573614/Untitled_1600_x_1000_px_1600_x_1000_px_1_gnhyo2_72ae6a.png" 
+                alt="Stylegenz" 
+                className="h-6 sm:h-7 md:h-8 lg:h-9 w-auto object-contain"
+                style={{ maxWidth: '150px' }}
               />
             </Link>
           </div>
@@ -90,15 +90,15 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
           {/* Logo - Mobile Center */}
           <Link to="/" className="md:hidden absolute left-1/2 transform -translate-x-1/2 flex items-center">
             <img 
-              src="https://res.cloudinary.com/dvkxgrcbv/image/upload/v1767693849/White_Teal_Yellow_And_Blue_Illustrative_Digital_Payment_Solutions_Presentation_100_x_100_px_2_fspuqo.png" 
-              alt="Sole mate" 
-              className="h-8 sm:h-10 w-auto object-contain"
-              style={{ maxWidth: '200px' }}
+              src="https://res.cloudinary.com/dvkxgrcbv/image/upload/v1771573614/Untitled_1600_x_1000_px_1600_x_1000_px_1_gnhyo2_72ae6a.png" 
+              alt="Stylegenz" 
+              className="h-6 sm:h-7 w-auto object-contain"
+              style={{ maxWidth: '150px' }}
             />
           </Link>
 
           {/* Center - Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 flex-1 justify-center">
+          <nav className="hidden md:flex items-center space-x-4 lg:space-x-5 flex-1 justify-center">
             <Link 
               to="/" 
               className="text-optic-body text-sm font-medium uppercase tracking-wider hover:opacity-70 transition-opacity"
@@ -130,7 +130,7 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
           </nav>
 
           {/* Right Side Actions */}
-          <div className="flex items-center space-x-2 sm:space-x-4 relative z-10 flex-1 justify-end">
+          <div className="flex items-center space-x-1.5 sm:space-x-2 relative z-10 flex-1 justify-end">
             {/* Search Bar - Inline for Desktop, Hidden for Mobile (will show below navbar) */}
             <div className="relative hidden md:block z-10">
               {!isSearchOpen ? (
@@ -140,7 +140,7 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
                     e.stopPropagation();
                     if (onSearchClick) onSearchClick(e);
                   }}
-                  className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl border transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                  className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg border transition-all duration-300 hover:scale-110 hover:shadow-lg"
                   style={{ 
                     backgroundColor: 'var(--bg-secondary)',
                     borderColor: 'var(--border-color)',
@@ -149,7 +149,7 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
                   aria-label="Open search"
                   type="button"
                 >
-                  <Search className="h-5 w-5 sm:h-6 sm:w-6" />
+                  <Search className="h-4 w-4 sm:h-5 sm:w-5" />
                 </button>
               ) : (
                 <form
@@ -171,7 +171,7 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
                       onChange={(e) => {
                         if (onSearchChange) onSearchChange(e);
                       }}
-                      className="w-48 sm:w-64 md:w-80 lg:w-96 h-10 sm:h-11 pl-10 pr-20 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300"
+                      className="w-48 sm:w-64 md:w-80 lg:w-96 h-8 sm:h-9 pl-8 pr-16 py-1.5 text-sm border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300"
                       style={{ 
                         backgroundColor: 'var(--bg-secondary)',
                         borderColor: 'var(--border-color)',
@@ -214,7 +214,7 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
                 e.stopPropagation();
                 if (onSearchClick) onSearchClick(e);
               }}
-              className="md:hidden flex items-center justify-center w-10 h-10 rounded-xl border transition-all duration-300 hover:scale-110 hover:shadow-lg"
+              className="md:hidden flex items-center justify-center w-8 h-8 rounded-lg border transition-all duration-300 hover:scale-110 hover:shadow-lg"
               style={{ 
                 backgroundColor: 'var(--bg-secondary)',
                 borderColor: 'var(--border-color)',
@@ -223,13 +223,13 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
               aria-label="Open search"
               type="button"
             >
-              <Search className="h-5 w-5" />
+              <Search className="h-4 w-4" />
             </button>
 
             {/* Wishlist - Hidden on mobile (shown in bottom nav) */}
             <Link to="/wishlist" className="relative group hidden md:block">
               <Heart 
-                className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:scale-110" 
+                className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:scale-110" 
                 style={{ color: 'var(--text-primary)' }}
               />
               {wishlist.length > 0 && (
@@ -245,7 +245,7 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
             {/* Shopping Bag - Hidden on mobile (shown in bottom nav) */}
             <Link to="/cart" className="relative group hidden md:block">
               <ShoppingBag 
-                className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:scale-110" 
+                className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:scale-110" 
                 style={{ color: 'var(--text-primary)' }}
               />
               {cart.length > 0 && (

@@ -12,8 +12,8 @@ const Footer = () => {
           <div className="flex items-center mb-3 sm:mb-4">
             <Link to="/" className="flex items-center">
               <img 
-                src="https://res.cloudinary.com/dvkxgrcbv/image/upload/v1767693849/White_Teal_Yellow_And_Blue_Illustrative_Digital_Payment_Solutions_Presentation_100_x_100_px_2_fspuqo.png" 
-                alt="Sole mate" 
+                src="https://res.cloudinary.com/dvkxgrcbv/image/upload/v1771574636/Untitled_1600_x_1000_px_1_ifkpl5.png" 
+                alt="Stylegenz" 
                 className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain"
                 style={{ maxWidth: '280px' }}
               />
@@ -64,11 +64,8 @@ const Footer = () => {
           <h2 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4" style={{ color: 'var(--bg-primary)' }}>Get in Touch</h2>
           <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
             <li className="font-semibold" style={{ color: 'var(--bg-primary)' }}>
-              M/S DYMA INFOTECH PRIVATE LIMITED
-            </li>
-            <li style={{ color: 'var(--bg-primary)' }}>
-              Solemate by Dyma Infotech Pvt. Ltd.
-            </li>
+              STYLEGENZ BY DYMA INFOTECH PRIVATE LIMITED
+            </li> 
             <li className="flex items-start gap-2" style={{ color: 'var(--bg-primary)' }}>
               <MapPin className="w-4 h-4 sm:w-4 sm:h-4 mt-0.5 flex-shrink-0" size={16}/>
               <span className="break-words">Flat No. D-806, Tower D, Shri Ram Heights, Raj Nagar Extension, Ghaziabad, Ghaziabad, Uttar Pradesh, India, 201017</span>
@@ -92,7 +89,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
             <div className="text-xs sm:text-sm text-center md:text-left" style={{ color: 'var(--bg-primary)' }}>
-              © {new Date().getFullYear()} Solemate by Dyma Infotech Pvt. Ltd. All Rights Reserved.
+              © {new Date().getFullYear()} Stylegenz by Dyma Infotech Pvt. Ltd. All Rights Reserved.
             </div>
             <div className="flex flex-wrap justify-center gap-x-2 sm:gap-x-4 gap-y-2 text-xs sm:text-sm">
               <Link to="/privacy-policy" className="transition-colors whitespace-nowrap" style={{ color: 'var(--bg-primary)' }} onMouseEnter={(e) => e.target.style.color = 'var(--bg-secondary)'} onMouseLeave={(e) => e.target.style.color = 'var(--bg-primary)'}>

@@ -1,5 +1,5 @@
 /**
- * Creates or updates the admin user (solemate123@gmail.com / Solemate123).
+ * Creates or updates the admin user (stylegenz123@gmail.com / Stylegenz123).
  * Uses MONGO_URI from .env. For production (e.g. Render), run with your
  * production MONGO_URI so the admin exists in the same DB as your deployed API:
  *   MONGO_URI="your_production_mongo_uri" node scripts/createAdminUser.js
@@ -15,8 +15,8 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: path.join(__dirname, "../.env") });
 
-const ADMIN_EMAIL = "solemate123@gmail.com";
-const ADMIN_PASSWORD = "Solemate123";
+const ADMIN_EMAIL = "stylegenz123@gmail.com";
+const ADMIN_PASSWORD = "Stylegenz123";
 const ADMIN_NAME = "Admin";
 
 const createAdminUser = async () => {

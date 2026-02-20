@@ -885,7 +885,7 @@ const Header = () => {
       {/* Search Bar Below Navbar - Mobile Only */}
       {isSearchOpen && (
         <div className="md:hidden border-b w-full" style={{ borderColor: 'var(--border-color)' }}>
-          <div className="w-full py-3 px-0">
+          <div className="w-full py-2 px-0">
             <form 
               onSubmit={handleSearchSubmit} 
               className="w-full"
@@ -900,7 +900,7 @@ const Header = () => {
                   name="search"
                   type="text"
                   placeholder="Search for eyewear, brands..."
-                  className="block w-full pl-10 pr-20 py-2.5 border rounded-lg focus:outline-none focus:ring-2 text-sm placeholder-gray-400 transition-all duration-300"
+                  className="block w-full pl-10 pr-20 py-2 border rounded-lg focus:outline-none focus:ring-2 text-sm placeholder-gray-400 transition-all duration-300"
                   style={{ 
                     backgroundColor: 'var(--bg-secondary)',
                     borderColor: 'var(--border-color)',
@@ -939,7 +939,7 @@ const Header = () => {
 
       {/* Category Section - Desktop Only */}
       <div className="hidden md:block border-b w-full" style={{ borderColor: 'var(--border-color)' }}>
-        <div className="w-full py-2 sm:py-2.5 px-0">
+        <div className="w-full py-1.5 sm:py-2 px-0">
           <div className="flex justify-center items-center gap-2 md:gap-3 flex-wrap">
             <MensShoesDropdown />
             <WomensShoesDropdown />
@@ -952,8 +952,8 @@ const Header = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden border-t w-full" style={{ borderColor: 'var(--border-color)' }}>
-          <div className="w-full py-4 px-0">
-            <nav className="flex flex-col space-y-4">
+          <div className="w-full py-3 px-0">
+            <nav className="flex flex-col space-y-3">
               <Link 
                 to="/" 
                 onClick={() => setIsMobileMenuOpen(false)}

@@ -25,7 +25,7 @@ const About = () => {
                 — comfortably.
               </h1>
               <p className="text-optic-body text-lg md:text-xl leading-relaxed max-w-2xl" style={{ color: 'var(--text-secondary)' }}>
-                At Solemate by Dyma Infotech Pvt. Ltd., we offer premium footwear for men, women, and kids. 
+                At Stylegenz by Dyma Infotech Pvt. Ltd., we offer premium footwear for men, women, and kids. 
                 From elegant heels to comfortable sneakers, we have the perfect pair 
                 for every step of your journey. Quality, comfort, and style — all in one step.
               </p>
@@ -278,7 +278,7 @@ const About = () => {
                 Quality Footwear for Every Step
               </h2>
               <p className="text-optic-body text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                At Solemate by Dyma Infotech Pvt. Ltd., we believe that great shoes are the foundation of great style. We're committed to providing 
+                At Stylegenz by Dyma Infotech Pvt. Ltd., we believe that great shoes are the foundation of great style. We're committed to providing 
                 high-quality footwear that combines comfort, durability, and fashion-forward designs for men, women, and children.
               </p>
               <div className="space-y-4 pt-4">
