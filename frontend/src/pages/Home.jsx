@@ -112,7 +112,7 @@ const Home = ({ addToCart, addToWishlist }) => {
             left: 0
           }}
         >
-          <source src="https://res.cloudinary.com/dvkxgrcbv/video/upload/v1769062178/Black_White_Animated_Fashion_Shoes_Store_Promo_Instagram_Reel_Instagram_Post_45_vg4ina.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dvkxgrcbv/video/upload/v1771654253/Black_White_Animated_Fashion_Shoes_Store_Promo_Instagram_Reel_ihz4um.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Optional overlay for better text readability if needed */}

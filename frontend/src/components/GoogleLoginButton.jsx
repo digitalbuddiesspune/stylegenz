@@ -65,6 +65,8 @@ const GoogleLoginButton = ({ text = "Continue with Google" }) => {
     );
   }
 
+  const origin = typeof window !== "undefined" ? window.location.origin : "";
+
   return (
     <div className="w-full">
       {error && (
@@ -84,6 +86,11 @@ const GoogleLoginButton = ({ text = "Continue with Google" }) => {
           locale="en"
         />
       </div>
+      {origin && (
+        <p className="mt-2 text-xs text-gray-500 break-all">
+          Add this exact URL in Google Console → Credentials → your OAuth client → Authorized JavaScript origins: <strong>{origin}</strong>
+        </p>
+      )}
     </div>
   );
 };

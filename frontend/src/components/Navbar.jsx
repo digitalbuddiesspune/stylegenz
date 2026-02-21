@@ -87,12 +87,12 @@ const Navbar = ({ onSearchClick, isSearchOpen, onSearchClose, searchTerm, onSear
             </Link>
           </div>
 
-          {/* Logo - Mobile Center */}
-          <Link to="/" className="md:hidden absolute left-1/2 transform -translate-x-1/2 flex items-center">
+          {/* Logo - Mobile Center: clickable, goes to home */}
+          <Link to="/home" className="md:hidden absolute left-1/2 transform -translate-x-1/2 flex items-center z-20" aria-label="Stylegenz - Go to home">
             <img 
               src="https://res.cloudinary.com/dvkxgrcbv/image/upload/v1771573614/Untitled_1600_x_1000_px_1600_x_1000_px_1_gnhyo2_72ae6a.png" 
               alt="Stylegenz" 
-              className="h-8 sm:h-9 w-auto object-contain"
+              className="h-8 sm:h-9 w-auto object-contain pointer-events-none"
               style={{ maxWidth: '160px' }}
             />
           </Link>
